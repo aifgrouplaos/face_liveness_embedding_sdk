@@ -1,0 +1,29 @@
+name: face_recognition_sdk
+description: Flutter plugin SDK for processing face input into embeddings and verification results.
+version: 0.1.0
+homepage: https://example.com/face_recognition_sdk
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.aif.face_recognition_sdk
+        pluginClass: FaceRecognitionSdkPlugin
+      ios:
+        pluginClass: FaceRecognitionSdkPlugin
+  assets:
+    - model/mobile_face_net.tflite
