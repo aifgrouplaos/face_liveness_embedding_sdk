@@ -1,4 +1,4 @@
-# face_recognition_sdk
+# face_liveness_embedding_sdk
 
 Flutter plugin SDK for processing face input into embeddings and verification results on Android and iOS.
 
